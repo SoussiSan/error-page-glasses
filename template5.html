@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta name="viewport" content="width=device-width, initial=1">
+    <link type="text/css" rel="stylesheet" href="template5.css">
+    <title>Soussi Glasses</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- profile icon --><!-- accessible icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">  <!-- eyeglasses font-->
+    <script>
+        $(document).ready(function(){
+
+            $(".popup").css('marginTop', $('.table2').innerHeight()+$('.table1').innerHeight()+2);
+            $(".animated li").hover(function(){
+                $(this).animate({
+                    left: "10px",
+                    color: "blue"
+                }, 100);
+            }, function(){
+                $(this).animate({
+                    left: "-2px",
+                    color: "black"
+                }, 100);
+            });
+            $("#eyeglasses").hover(function(){
+                $(".popup").fadeIn(100);
+            });
+            $('.popup').mouseleave(function(){
+                $(".popup").fadeToggle(100);
+
+            });
+            $('.middle img').hover(function(){
+                $(this).css({
+                    transform:'scale(1.1)'
+                });
+            }, function(){
+                $(this).css({
+                    transform:'scale(1.0)'
+                });
+            });
+        });
+    </script>
+</header>
+<body>
+<nav>
+    <table class="table1">
+        <tr>
+            <td>
+                <ul >
+                    <li>
+                        | <i class='fab fa-accessible-icon' style='font-size:18px'></i>
+                    </li>
+                    <li>
+                        | Help
+                    </li>
+                    <li>
+                        | My contact & orders <i class='far fa-user-circle' style='font-size:18px'></i>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <table class="table2">
+        <tr>
+            <td>
+                <img src="glasselogo.png" width="260px">
+            </td>
+            <td class="biggest">
+                <ul >
+                    <li>
+                        <h1 id="eyeglasses">Eyeglasses</h1>
+                    </li>
+                    <li>
+                        <h1>Sunglasses</h1>
+                    </li>
+                    <li>
+                        <h1>Multifocal</h1>
+                    </li>
+                    <li>
+                        <h1>Brands</h1>
+                    </li>
+                    <li>
+                        <h1>Contact</h1>
+                    </li>
+                    <li>
+                        <h1>Blue light</h1>
+                    </li>
+                    <li>
+                        <h1>Explore</h1>
+                    </li>
+                    <li>
+                        <h1 style="color: red">Deals</h1>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <div class="search">
+                   <input type="text" placeholder="search..."><a class='fas fa-search' style='font-size:15px'></a>
+                </div>
+
+            </td>
+            <td>
+                <a class='fas fa-shopping-cart' style='font-size:36px;color:#3333cc'></a>
+                <a class='far fa-heart' style='font-size:36px;color:#3333cc'></a>
+            </td>
+        </tr>
+    </table>
+    <div class="popup">
+        <div class="eyeglasses">
+            <table>
+                <tr>
+                    <td class="left">
+                        <ol class="animated">
+                            <li>
+                                Women's eyeglasses
+                            </li>
+                            <li>
+                                Men's eyeglasses
+                            </li>
+                            <li>
+                                Ray-Ban eyeglasses
+                            </li>
+                            <li>
+                                Multifocals
+                            </li>
+                            <li>
+                                Designer eyeglasses
+                            </li>
+                            <li>
+                                Clearance
+                            </li>
+                        </ol>
+                    </td>
+                    <td class="middle">
+                        <ul>
+                            <li>
+                                <img src="g1.png">
+                                <p>cat</p>
+                            </li>
+                            <li>
+                                <img src="g2.png">
+                                <p>cat</p>
+                            </li>
+                            <li>
+                                <img src="g3.png">
+                                <p>cat</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="g4.png">
+                                <p>cat</p>
+                            </li>
+                            <li>
+                                <img src="g5.png">
+                                <p>cat</p>
+                            </li>
+                            <li>
+                                <img src="g6.png">
+                                <p>cat</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="right">
+                        <h2>
+                            BUY ONE GET <br> ONE FREE
+                        </h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</nav>
+<aside>
+    <div class="chat">
+        <p>
+            Chat <i class='fab fa-rocketchat' style='font-size:24px'></i>
+        </p>
+
+    </div>
+</aside>
+<article>
+    <div class="looks">
+        Looks like something is missing
+
+    </div>
+    <img src="view.png">
+    <div class="shopd">
+        <a class="shop">Shop eyeglasses</a>
+        <a class="shop">Shop sunglasses</a>
+    </div>
+</article>
+</body>
+</html>
